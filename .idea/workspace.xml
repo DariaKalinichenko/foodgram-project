@@ -2,148 +2,272 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7ae859-0330-4359-a38a-4d34fc8df32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authorRecipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authorRecipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changePassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/changePassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favorite.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/favorite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/favorite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formChangeRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formChangeRecipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formRecipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formRecipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexAuth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexNotAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexNotAuth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexNotAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexNotAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFollow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myFollow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFollow.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myFollow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resetPassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shopList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopList.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shopList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singlePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singlePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singlePageNotAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePageNotAuth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singlePageNotAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePageNotAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/dom/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/follow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/misc/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/misc/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/new_recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/paginator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_change_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/user_head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templatetags/user_filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/badge/_style/badge_style_blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/badge/_style/badge_style_blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/badge/_style/badge_style_green.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/badge/_style/badge_style_green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/badge/_style/badge_style_orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/badge/_style/badge_style_orange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/badge/_style/badge_style_purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/badge/_style/badge_style_purple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/badge/badge.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/badge/badge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/body/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/body/body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/__icon/button__icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/__icon/button__icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/_style/button_style_blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/_style/button_style_blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/_style/button_style_light-blue-outline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/_style/button_style_light-blue-outline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/_style/button_style_light-blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/_style/button_style_light-blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/_style/button_style_none.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/_style/button_style_none.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/size/button_size_auto.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/size/button_size_auto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button/size/button_size_subscribe.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/button/size/button_size_subscribe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-list/_column/card-list_column.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-list/_column/card-list_column.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-list/card-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-list/card-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__body/card-user__body.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__body/card-user__body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__footer/card-user__footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__footer/card-user__footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__header/card-user__header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__header/card-user__header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__item/card-user__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__item/card-user__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__items/card-user__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__items/card-user__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__link/card-user__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__link/card-user__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/__title/card-user__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/__title/card-user__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card-user/card-user.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card-user/card-user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__body/card__body.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__body/card__body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__footer/card__foter.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__footer/card__foter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__image/card__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__image/card__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__item/card__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__item/card__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__items/_column/card__items_column.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__items/_column/card__items_column.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__items/card__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__items/card__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__text/card__text.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__text/card__text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__title/card__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/__title/card__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/card/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/container/container.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/container/container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__brand/footer__brand.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/__brand/footer__brand.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__container/footer__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/__container/footer__container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__item/footer__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/__item/footer__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__items/footer__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/__items/footer__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__link/footer__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/__link/footer__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form-container/form-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form-container/form-container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__dropdown-items/form__dropdown-items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__dropdown-items/form__dropdown-items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__dropdown/form__dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__dropdown/form__dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__error/form__error.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__error/form__error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__field-group-ingredientes/form__field-group-ingredientes.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__field-group-ingredientes/form__field-group-ingredientes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__field-group/_time/form__field-group_time.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__field-group/_time/form__field-group_time.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__field-group/form__field-group.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__field-group/form__field-group.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__field-item-delete/form__field-item-delete.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__field-item-delete/form__field-item-delete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__field-item-ingredient/form__field-item-ingredient.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__field-item-ingredient/form__field-item-ingredient.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__file-button/form__file-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__file-button/form__file-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__file/form__file.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__file/form__file.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__footer/form__footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__footer/form__footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__forgot-link/form__forgot-link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__forgot-link/form__forgot-link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__group/form__group.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__group/form__group.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__info-text/form__info-text.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__info-text/form__info-text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__ingredient-link/form__ingerident-link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__ingredient-link/form__ingerident-link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__ingredientes/form__field-group__ingredientes.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__ingredientes/form__field-group__ingredientes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__input-info/form__input-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__input-info/form__input-info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__input/form__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__input/form__input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__item-list/form__item-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__item-list/form__item-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__label/form__label.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__label/form__label.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__textarea/form__textarea.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/__textarea/form__textarea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/form/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-check/icon-check.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-check/icon-check.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-favorite/_active/icon-favorite_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-favorite/_active/icon-favorite_active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-favorite/big/icon-favorite_big.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-favorite/big/icon-favorite_big.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-favorite/icon-favorite.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-favorite/icon-favorite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-left/icon-left.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-left/icon-left.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-plus/icon-plus.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-plus/icon-plus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-right/icon-right.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-right/icon-right.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-time/icon-time.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-time/icon-time.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/icon-user/icon-user.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/icon-user/icon-user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/link/link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/link/link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main/__header/main__header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/main/__header/main__header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main/__title/main__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/main/__title/main__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main/center-block.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/main/center-block.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__badge/nav__badge.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__badge/nav__badge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__container/nav__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__container/nav__container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__item/_active/nav__item_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__item/_active/nav__item_active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__item/_disabled/nav__item_disabled.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__item/_disabled/nav__item_disabled.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__item/nav__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__item/nav__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__items/nav__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__items/nav__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/__link/nav__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/__link/nav__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/nav/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/nav/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/pagination/__container/pagination__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/pagination/__container/pagination__container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/pagination/__item/_active/pagination__item_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/pagination/__item/_active/pagination__item_active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/pagination/__item/pagination__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/pagination/__item/pagination__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/pagination/__link/pagination__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/pagination/__link/pagination__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/pagination/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/pagination/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/__image/_big/recipe__image_big.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/__image/_big/recipe__image_big.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/__image/recipe__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/__image/recipe__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/__text/recipe__text.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/__text/recipe__text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/__title/recipe__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/__title/recipe__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/_reverse/recipe_reverse.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/_reverse/recipe_reverse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/recipe/recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/recipe/recipe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/shopping-list/__button/shopping-list__button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/shopping-list/__button/shopping-list__button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/shopping-list/__item/shopping-list__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/shopping-list/__item/shopping-list__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/shopping-list/shopping-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/shopping-list/shopping-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__favorite-tooltip/single-card__favorite-tooltip.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__favorite-tooltip/single-card__favorite-tooltip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__favorite/single-card__favorite.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__favorite/single-card__favorite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__header-info/single-card__header-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__header-info/single-card__header-info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__image/single-card__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__image/single-card__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__info/single-card__info.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__info/single-card__info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__item/single-card__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__item/single-card__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__items/_column/single-card__items_column.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__items/_column/single-card__items_column.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__items/single-card__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__items/single-card__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__section-item/single-card__section-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__section-item/single-card__section-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__section-text/single-card__section-text.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__section-text/single-card__section-text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__section-title/single-card__section-title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__section-title/single-card__section-title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__section/single-card__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__section/single-card__section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__text/single-card__text.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__text/single-card__text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/__title/single-card__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/__title/single-card__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/single-card/single-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/single-card/single-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__checkbox/_active/tags__checkbox_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__checkbox/_active/tags__checkbox_active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__checkbox/_style/tags__checkbox_style_green.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__checkbox/_style/tags__checkbox_style_green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__checkbox/_style/tags__checkbox_style_orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__checkbox/_style/tags__checkbox_style_orange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__checkbox/_style/tags__checkbox_style_purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__checkbox/_style/tags__checkbox_style_purple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__checkbox/tags__checkbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__checkbox/tags__checkbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__item/tags__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__item/tags__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/__label/tags__label.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/__label/tags__label.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/tags/tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blocks/tags/tags.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodgram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodgram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons8-delete-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/icons8-delete-16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/starActive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/starActive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/testCardImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/testCardImg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/timeIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/timeIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/user-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/user-check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/userIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/userIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/yes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/yes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredients.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredients/ingredients.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/AuthorRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/AuthorRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/CardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/CardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/Favorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/MainCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/MainCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/MyFollow.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/MyFollow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Purchases.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/Purchases.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/ShopList.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/ShopList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/SingleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/SingleCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/Subscribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Throttle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/components/Throttle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dom/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/utils/debouncing.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/utils/debouncing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/pages/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/myFollow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/pages/myFollow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shopList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/pages/shopList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/single.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/pages/single.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/authForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/authorRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authorRecipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/authorRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/authorRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/favorite.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/favorite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/favorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/favorite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formChangeRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formChangeRecipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formRecipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/formRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/indexAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexAuth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/indexAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/indexAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/indexNotAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indexNotAuth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/indexNotAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/indexNotAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myFollow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myFollow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myFollow.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/myFollow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shopList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shopList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shopList.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/shopList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/singlePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/singlePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/singlePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/singlePageNotAuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePageNotAuth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/singlePageNotAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/singlePageNotAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/normalize.css" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recipe/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recipe/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>js</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/foodgram/settings.py" />
-        <option value="$PROJECT_DIR$/recipe/models.py" />
-        <option value="$PROJECT_DIR$/recipe/admin.py" />
-      </list>
-    </option>
+  <component name="JupyterTrust" id="e25f5239-bdce-4f3b-b947-98123ca45732" />
+  <component name="ProjectId" id="1irP7OhcF9aDr23igKTZ8f7OpAp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/foodgram-project.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="foodgram-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foodgram-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foodgram-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foodgram-project" type="462c0819:PsiDirectoryNode" />
-              <item name="foodgram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foodgram-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foodgram-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ingredients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foodgram-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foodgram-project" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql&#10;sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/users/templates" />
+      <recent name="$PROJECT_DIR$/users" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -154,105 +278,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601968328878</updated>
+      <workItem from="1602662577025" duration="21000" />
+      <workItem from="1602662641344" duration="62000" />
+      <workItem from="1602662741235" duration="54107000" />
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16842847" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2819277" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/body/body.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/indexNotAuth.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/favorite.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/indexAuth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ingredients/ingredients.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodgram/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ingredients/ingredients.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret column="263" selection-start-column="254" selection-end-column="263" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipe/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipe/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="320" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603385878238">
+      <screen x="0" y="23" width="1440" height="784" />
+    </state>
+    <state x="320" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.784@0.23.1440.784" timestamp="1603385878238" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1602930224079">
+      <screen x="0" y="23" width="1440" height="784" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.23.1440.784@0.23.1440.784" timestamp="1602930224079" />
+    <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1603385869602">
+      <screen x="0" y="23" width="1440" height="784" />
+    </state>
+    <state width="243" height="457" key="HiddenNamespacesPopup/0.23.1440.784@0.23.1440.784" timestamp="1603385869602" />
   </component>
 </project>

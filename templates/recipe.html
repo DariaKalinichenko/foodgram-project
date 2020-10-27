@@ -1,4 +1,7 @@
-    <div class="card" data-id=" {{recipe.id}} ">
+{% load user_filters %}
+
+{% load templates_filters %}
+    <div class="card" data-id="{{recipe.id}}">
           <a href="{% url 'recipe_view' recipe.author.username recipe.id %}" class="link" target="_blank"><img src="{{ recipe.image.url }}" alt="Какой-то текст" class="card__image"></a>
           <div class="card__body">
               <a class="card__title link" href="" target="_blank">{{ recipe.title }}</a>
@@ -15,16 +18,16 @@
               </div>
           </div>
           <div class="card__footer">
-              {% if recipe.id in card_list %}
-              <button class="button button_style_light-blue-outline" name="purchases" data-out><span class="icon-plus button__icon"></span>Рецепт добавлен</button>
-              {% else %}
-              <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
-              {% endif %}
 
-              {% if recipe.id in following_list%}
-              <button class="button button_style_none" name="favorites" ><span class="icon-favorite icon-favorite_active"></span></button>
-              {% else %}
-              <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite"></span></button>
-              {% endif %}
+{% include 'buy_button.html' %}
+
+{% if user.is_authenticated %}
+    {% if recipe|is_favorite:user %}
+        <button class="button button_style_none" name="favorites"><span class="icon-favorite icon-favorite_active"></span></button>
+    {% else %}
+        <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite"></span></button>
+    {% endif %}
+{% endif %}
+
           </div>
       </div>

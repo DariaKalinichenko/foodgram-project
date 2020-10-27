@@ -1,5 +1,4 @@
 from django.views.generic import CreateView
-#  функция reverse_lazy позволяет получить URL по параметру "name" функции path()
 from django.urls import reverse_lazy
 from .forms import CreationForm
 

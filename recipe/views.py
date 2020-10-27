@@ -1,32 +1,99 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.db.models import Sum
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 
 from recipe.forms import RecipeForm
-from recipe.models import Recipe, Ingredients, FollowUser
+from recipe.models import Recipe, Ingredients, FollowUser, ShoppingList, RecipeIngredient
 from django.core.paginator import Paginator
+
+from recipe.utils import get_ingredients
 
 
 def index(request):
-    recipes = Recipe.objects.all()
-    paginator = Paginator(recipes, 6)  # показывать по 10 записей на странице.
-    page_number = request.GET.get('page')  # переменная в URL с номером запрошенной страницы
-    page = paginator.get_page(page_number)
-    return render(request, "index.html", {"recipes": recipes, 'page': page, 'paginator': paginator,})
+    tags_slug = request.GET.getlist('filters')
+    recipe_list = Recipe.objects.all()
 
-@login_required
+    if tags_slug:
+        recipe_list = recipe_list.filter(
+            tags__slug__in=tags_slug).distinct().all()
+
+    paginator = Paginator(recipe_list, 6)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+
+    return render(request, 'index.html',
+                  {'page': page, 'paginator': paginator, })
+
+
 def new_recipe(request):
+    user = User.objects.get(username=request.user)
     if request.method == 'POST':
-        form = RecipeForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
+        form = RecipeForm(request.POST or None, files=request.FILES or None)
+        print(form.errors)
+        ingredients = get_ingredients(request)
+        if not ingredients:
+            form.add_error(None, 'Добавьте ингредиенты')
+        elif form.is_valid():
+            recipe = form.save(commit=False)
+            recipe.author = user
+            recipe.save()
+            for ing_name, amount in ingredients.items():
+                ingredient = get_object_or_404(Ingredients, title=ing_name)
+                recipe_ing = RecipeIngredient(
+                    recipe=recipe,
+                    ingredient=ingredient,
+                    amount=amount
+                )
+                recipe_ing.save()
+            form.save_m2m()
             return redirect('index')
-        return render(request, 'new_recipe.html', {'form': form})
-    form = RecipeForm()
+    else:
+        form = RecipeForm()
     return render(request, 'new_recipe.html', {'form': form})
+
+
+def recipe_edit(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+
+    if request.user != recipe.author:
+        return redirect('index')
+
+    if request.method == "POST":
+        form = RecipeForm(request.POST or None,
+                          files=request.FILES or None, instance=recipe)
+        ingredients = get_ingredients(request)
+        if form.is_valid():
+            # удаляем все записи об ингредиентах из базы
+            RecipeIngredient.objects.filter(recipe=recipe).delete()
+
+            recipe = form.save(commit=False)
+            recipe.author = request.user
+            recipe.save()
+
+            # Заполняем новыми ингредиентами
+            for item in ingredients:
+                RecipeIngredient.objects.create(
+                    units=ingredients[item],
+                    ingredient=Ingredients.objects.get(name=f'{item}'),
+                    recipe=recipe)
+            form.save_m2m()  # это нужно для нормального заполнения тегами
+            return redirect('index')
+
+    form = RecipeForm(request.POST or None,
+                      files=request.FILES or None, instance=recipe)
+
+    return render(request, 'recipe_edit.html',
+                  {'form': form, 'recipe': recipe, })
+
+
+def recipe_delete(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    if request.user == recipe.author:
+        recipe.delete()
+    return redirect('index')
+
 
 def recipe_view(request, recipe_id, username):
 
@@ -36,12 +103,14 @@ def recipe_view(request, recipe_id, username):
     return render(request, 'singlePage.html',
         {'username': username, 'recipe': recipe, })
 
-def recipe_edit(request):
-    pass
+
 
 def profile(request, username):
     username = get_object_or_404(User, username=username)
+    tag = request.GET.getlist('filters')
     recipes = Recipe.objects.filter(author=username).select_related('author').all()
+    if tag:
+        recipes = recipes.filter(tags__slug__in=tag)
     paginator = Paginator(recipes, 6)  # показывать по 10 записей на странице.
     page_number = request.GET.get('page')  # переменная в URL с номером запрошенной страницы
     page = paginator.get_page(page_number)
@@ -57,31 +126,35 @@ def profile(request, username):
 
 
 def favorite(request):
-    follows = FollowUser.objects.filter(user=request.user).values('author')
-    following_list = Recipe.objects.filter(author_id__in=follows).select_related('author')
-    paginator = Paginator(following_list, 6)  # показывать по 10 записей на странице.
-
-    page_number = request.GET.get('page')  # переменная в URL с номером запрошенной страницы
-    page = paginator.get_page(page_number)  # получить записи с нужным смещением
-    return render(request, 'favorite.html', {'page': page, 'paginator': paginator})
+    tag = request.GET.getlist('filters')
+    recipe_list = Recipe.objects.filter(follow_recipe__user__id=request.user.id).all()
+    if tag:
+        recipe_list = recipe_list.filter(tags__slug__in=tag).distinct()
+    paginator = Paginator(recipe_list, 6)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    return render(request, 'favorite.html', {'page': page, 'paginator': paginator, })
 
 
 def follow(request):
-    follows = FollowUser.objects.filter(user=request.user).values('author')
-    following_list = Recipe.objects.filter(author_id__in=follows).select_related('author')
-    paginator = Paginator(following_list, 6)  # показывать по 10 записей на странице.
-
-    page_number = request.GET.get('page')  # переменная в URL с номером запрошенной страницы
-    page = paginator.get_page(page_number)  # получить записи с нужным смещением
-    return render(request, 'follow.html', {'page': page, 'paginator': paginator})
-
-
-def profile_follow(request):
-    pass
+    author_list = FollowUser.objects.filter(user__id=request.user.id).all()
+    paginator = Paginator(author_list, 6)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
+    return render(
+        request,
+        'follow.html',
+        {'page': page, 'paginator': paginator, 'author': author_list}
+    )
 
 
-def profile_unfollow(request):
-    pass
+def shopping_list(request):
+    shopping_list = ShoppingList.objects.filter(user=request.user).all()
+    return render(
+        request,
+        'shopping-list.html',
+        {'shopping_list': shopping_list}
+    )
 
 
 
@@ -91,6 +164,28 @@ def page_not_found(request, exception):
     # выводить её в шаблон пользователской страницы 404 мы не станем
 
     return render(request, "misc/404.html", {"path": request.path}, status=404)
+
+
+def download_card(request):
+    recipes = Recipe.objects.filter(recipe_shopping_list__user=request.user)
+    ingredients = recipes.values(
+        'ingredients__title', 'ingredients__dimension'
+    ).annotate(
+        total_amount=Sum('recipe_ingredients__amount')
+    )
+    file_data = ""
+
+    for item in ingredients:
+        line = ' '.join(str(value) for value in item.values())
+        file_data += line + '\n'
+
+    response = HttpResponse(
+        file_data, content_type='application/text charset=utf-8'
+    )
+    response['Content-Disposition'] = 'attachment; filename="ShoppingList.txt"'
+    return response
+
+
 
 
 def server_error(request):

@@ -6,17 +6,45 @@
     <link rel="stylesheet" href={% static 'pages/index.css' %}>
     {% endblock %}
     {% load user_filters %}
+        {% load templates_filters %}
+
     {% block content %}
     <main class="main container">
         <div class="main__header">
            <h1 class="main__title">{{ username.get_full_name }} </h1>
-            {% include 'tags.html' %}
+            <ul class="tags">
+                {% for tag in all_tags %}
+                        <li class="tags__item">
+                            <a
+                                id="{{ tag.slug }}"
+                                class="tags__checkbox tags__checkbox_style_{{ tag.color }}
+                                {% if tag.slug in request.GET|get_filter_values %} tags__checkbox_active {% endif %}"
+                                href="{% url 'profile' username %}?{{ request|get_filter_link:tag }}"></a>
+                            <span class="tags__label">{{ tag.name }}</span>
+                        </li>
+                    {% endfor %}
+            </ul>
 
         </div>
-        <p style="padding: 0 0 2em 0;"><a class="button button_style_light-blue" href="#">Подписаться на автора</a></p>
+
+        {% if user.username != profile.username %}
+
+        <div class="author-subscribe" data-author="{{ username.id }}">
+        {% if user.is_authenticated %}
+        {% if username|is_follow:user %}
+            <button class="button button_style_light-blue button_size_auto" name="subscribe"><span class="icon-check button__icon"></span>Отписаться от автора </button></p>
+        {% else %}
+            <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_auto" name="subscribe" data-out>Подписаться на автора</button></p>
+        {% endif %}
+        {% endif %}
+        </div>
+
+        {% endif %}
+
+
 
         <div class="card-list">
-            {% for post in page %}
+            {% for recipe in page %}
             {% include 'recipe.html' %}
             {% endfor %}
     {% csrf_token %}
@@ -24,16 +52,16 @@
     {% include 'paginator.html' %}
     </main>
 
-  <script src="./js/components/MainCards.js"></script>
+ <script src="{% static 'js/config/config.js' %}"></script>
+    <script src="{% static 'js/components/MainCards.js' %}"></script>
+    <script src="{% static 'js/components/AuthorRecipe.js' %}"></script>
+    <script src="{% static 'js/components/Subscribe.js' %}"></script>
+    <script src="{% static 'js/components/Purchases.js' %}"></script>
+    <script src="{% static 'js/components/Favorites.js' %}"></script>
+    <script src="{% static 'js/components/CardList.js' %}"></script>
+    <script src="{% static 'js/components/Header.js' %}"></script>
 
-  <script src="./js/components/Purchases.js"></script>
-  <script src="./js/components/Favorites.js"></script>
-  <script src="./js/components/Subscribe.js"></script>
-
-  <script src="./js/config/config.js"></script>
-  <script src="./js/components/AuthorRecipe.js"></script>
-  <script src="./js/components/Header.js"></script>
-
-  <script src="./js/api/Api.js"></script>
-  <script src="../static/js/authorRecipe.js"></script>
+    <script src="{% static 'js/api/Api.js' %}"></script>
+    <script src="{% static 'js/authorRecipe.js' %}"></script>
+    <script src="{% static 'js/indexAuth.js' %}"></script>
     {% endblock %}

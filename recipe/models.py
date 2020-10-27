@@ -14,8 +14,8 @@ class Tag(models.Model):
 
 
 class Ingredients(models.Model):
-    title = models.CharField(max_length=200)
-    dimension = models.CharField(max_length=200)
+    title = models.CharField(max_length=200, null=True, blank=True)
+    dimension = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.title

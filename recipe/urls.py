@@ -8,11 +8,12 @@ urlpatterns = [
 
     path("favorite/", views.favorite, name="favorite"),
     path("follow/", views.follow, name="follow"),
+    path("shopping-list/", views.shopping_list, name='shopping-list'),
+    path('download_card', views.download_card, name='download_card'),
 
-    path("<username>/follow", views.profile_follow, name="profile_follow"),
-    path("<username>/unfollow", views.profile_unfollow, name="profile_unfollow"),
-    path("new/", views.new_recipe, name="new_recipe"),
-    # Профайл пользователя
+    path("new-recipe/", views.new_recipe, name="new_recipe"),
+    path('recipe/<int:recipe_id>/edit', views.recipe_edit, name='recipe_edit'),
+    path('recipe/<int:recipe_id>/delete', views.recipe_delete, name='recipe_delete'),
     path("<username>/", views.profile, name="profile"),
     # Просмотр записи
     path("<username>/<int:recipe_id>/", views.recipe_view, name="recipe_view"),

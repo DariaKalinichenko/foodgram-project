@@ -32,9 +32,3 @@ urlpatterns = [
 
 handler404 = "recipe.views.page_not_found"  # noqa
 handler500 = "recipe.views.server_error"  # noqa
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL,
-                          document_root=settings.STATIC_ROOT)

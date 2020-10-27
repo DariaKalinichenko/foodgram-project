@@ -1,11 +1,12 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.http import JsonResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.views import View
 from rest_framework.utils import json
 
-from recipe.models import Recipe, FollowRecipe, Ingredients, FollowUser, ShoppingList
+from recipe.models import Recipe, FollowRecipe, \
+    Ingredients, FollowUser, ShoppingList
 
 
 class Favorites(LoginRequiredMixin, View):

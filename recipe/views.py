@@ -1,11 +1,11 @@
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 
 from recipe.forms import RecipeForm
-from recipe.models import Recipe, Ingredients, FollowUser, ShoppingList, RecipeIngredient
+from recipe.models import Recipe, Ingredients, FollowUser, \
+    ShoppingList, RecipeIngredient
 from django.core.paginator import Paginator
 
 from recipe.utils import get_ingredients
@@ -101,43 +101,52 @@ def recipe_view(request, recipe_id, username):
     username = get_object_or_404(User, username=username)
 
     return render(request, 'singlePage.html',
-        {'username': username, 'recipe': recipe, })
-
+                  {'username': username, 'recipe': recipe, })
 
 
 def profile(request, username):
     username = get_object_or_404(User, username=username)
     tag = request.GET.getlist('filters')
-    recipes = Recipe.objects.filter(author=username).select_related('author').all()
+    recipes = Recipe.objects.filter(author=username).\
+        select_related('author').all()
     if tag:
         recipes = recipes.filter(tags__slug__in=tag)
-    paginator = Paginator(recipes, 6)  # показывать по 10 записей на странице.
-    page_number = request.GET.get('page')  # переменная в URL с номером запрошенной страницы
+    paginator = Paginator(recipes, 6)
+    page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
 
     if request.user.is_authenticated:
-        following = FollowUser.objects.filter(user=request.user).filter(author=username).select_related('author')
+        following = FollowUser.objects.filter(user=request.user).\
+            filter(author=username).select_related('author')
         if not following:
             following = None
         else:
             following = True
-        return render(request, "authorRecipe.html", {'username': username, 'page': page, 'paginator': paginator, 'following': following})
-    return render(request, "authorRecipe.html", {'username': username, 'page': page, 'paginator': paginator, })
+        return render(request, "authorRecipe.html",
+                      {'username': username, 'page': page,
+                       'paginator': paginator, 'following': following})
+    return render(request, "authorRecipe.html",
+                  {'username': username, 'page': page,
+                   'paginator': paginator, })
 
 
 def favorite(request):
     tag = request.GET.getlist('filters')
-    recipe_list = Recipe.objects.filter(follow_recipe__user__id=request.user.id).all()
+    recipe_list = Recipe.objects.filter(
+        follow_recipe__user__id=request.user.id).all()
     if tag:
-        recipe_list = recipe_list.filter(tags__slug__in=tag).distinct()
+        recipe_list = recipe_list.filter(
+            tags__slug__in=tag).distinct()
     paginator = Paginator(recipe_list, 6)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
-    return render(request, 'favorite.html', {'page': page, 'paginator': paginator, })
+    return render(request, 'favorite.html',
+                  {'page': page, 'paginator': paginator, })
 
 
 def follow(request):
-    author_list = FollowUser.objects.filter(user__id=request.user.id).all()
+    author_list = FollowUser.objects.filter(
+        user__id=request.user.id).all()
     paginator = Paginator(author_list, 6)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
@@ -155,15 +164,6 @@ def shopping_list(request):
         'shopping-list.html',
         {'shopping_list': shopping_list}
     )
-
-
-
-def page_not_found(request, exception):
-
-    # Переменная exception содержит отладочную информацию,
-    # выводить её в шаблон пользователской страницы 404 мы не станем
-
-    return render(request, "misc/404.html", {"path": request.path}, status=404)
 
 
 def download_card(request):
@@ -186,6 +186,8 @@ def download_card(request):
     return response
 
 
+def page_not_found(request, exception):
+    return render(request, "misc/404.html", {"path": request.path}, status=404)
 
 
 def server_error(request):

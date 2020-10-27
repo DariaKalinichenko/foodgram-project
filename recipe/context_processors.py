@@ -1,11 +1,13 @@
 from .models import ShoppingList, Tag
 
+
 def counter(request):
     if request.user.is_authenticated:
         count = ShoppingList.objects.filter(user=request.user).count()
     else:
         count = []
     return {'count': count}
+
 
 def all_tags(request):
     """Вывод всех тегов."""

@@ -22,7 +22,8 @@ class Ingredients(models.Model):
 
 
 class Recipe(models.Model):
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='recipes_author')
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name='recipes_author')
     title = models.CharField(max_length=200)
     image = models.ImageField(upload_to='recipe/', blank=True, null=True)
     description = models.TextField()
@@ -37,27 +38,35 @@ class Recipe(models.Model):
 
 
 class RecipeIngredient(models.Model):
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='recipe_ingredients')
-    ingredient = models.ForeignKey(Ingredients, on_delete=models.CASCADE, related_name='recipes')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,
+                               related_name='recipe_ingredients')
+    ingredient = models.ForeignKey(Ingredients, on_delete=models.CASCADE,
+                                   related_name='recipes')
     amount = models.IntegerField()
 
 
 class ShoppingList(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_shopping_list')
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="recipe_shopping_list")
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name='user_shopping_list')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,
+                               related_name="recipe_shopping_list")
 
 
 class FollowUser(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="follower")  # который подписывается
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="following")  # на которого подписываются
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name="follower")
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name="following")
 
     def __str__(self):
         return f'follower - {self.user} following - {self.author}'
 
 
 class FollowRecipe(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="follower_recipe")
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="follow_recipe")
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name="follower_recipe")
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,
+                               related_name="follow_recipe")
 
     def __str__(self):
         return f'follower - {self.user} following recipe- {self.recipe}'

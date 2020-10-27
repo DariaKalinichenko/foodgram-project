@@ -1,9 +1,10 @@
-version: '3.8'
+version: '3'
+
 services:
   db:
     image: postgres:latest
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - postgres_data:/var/lib/postgresql/data
     env_file:
       - ./.env
   web:
@@ -17,7 +18,8 @@ services:
       - ./.env
     volumes:
       - static:/code/static
-      - media:/code/media
+      - media:/code/static/media
+    command: bash -c "cd ./foodgram/ && python manage.py migrate && echo Migrate succsessful! && gunicorn foodgram.wsgi:application --bind 0.0.0.0:5000"
   nginx:
     build: ./nginx
     depends_on:
@@ -30,6 +32,7 @@ services:
       - media:/media
     links:
       - web
+
 volumes:
   postgres_data:
   static:

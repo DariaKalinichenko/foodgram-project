@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7ae859-0330-4359-a38a-4d34fc8df32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/foodgram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20264989_1983366581893261_8457505051582237534_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20c83e6e89b60241f56da8d0dd27670a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20c83e6e89b60241f56da8d0dd27670a_GaUH385.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20c83e6e89b60241f56da8d0dd27670a_UcWVCA3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20c83e6e89b60241f56da8d0dd27670a_emm8T5O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/20c83e6e89b60241f56da8d0dd27670a_yLPBaDW.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/354584-admin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/44dfa32a76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/Снимок_экрана_2020-04-26_в_20.32.16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/Снимок_экрана_2020-04-26_в_20.54.34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/Снимок_экрана_2020-04-26_в_20.54.34_xXp5vuz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/recipe/обои.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Снимок_экрана_2020-04-26_в_20.32.16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +44,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/users/templates" />
       <recent name="$PROJECT_DIR$/users" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,7 +99,7 @@
       <workItem from="1602662577025" duration="21000" />
       <workItem from="1602662641344" duration="62000" />
       <workItem from="1602662741235" duration="58787000" />
-      <workItem from="1603446174761" duration="50028000" />
+      <workItem from="1603446174761" duration="50422000" />
     </task>
     <servers />
   </component>

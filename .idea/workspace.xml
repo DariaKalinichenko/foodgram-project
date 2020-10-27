@@ -2,43 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7ae859-0330-4359-a38a-4d34fc8df32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recipe/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe/templatetags/templates_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/buy_button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/favorite_button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/follow_button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recipe_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/shopping-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodgram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingredients/ingredients.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/api/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/authorRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authorRecipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/favorite.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/favorite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/follow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/follow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/new_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shopList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/singlePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singlePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/password_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +45,9 @@
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/users/templates" />
@@ -131,7 +104,7 @@
       <workItem from="1602662577025" duration="21000" />
       <workItem from="1602662641344" duration="62000" />
       <workItem from="1602662741235" duration="58787000" />
-      <workItem from="1603446174761" duration="45186000" />
+      <workItem from="1603446174761" duration="47371000" />
     </task>
     <servers />
   </component>

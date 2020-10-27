@@ -3,8 +3,8 @@
           <div class="nav__container container">
               <ul class="nav__items list">
                   {% if user.is_authenticated %}
-                  {% block index %}<li class="nav__item">{% endblock %}<a href="{% url 'index' %}"class="nav__link link">Рецепты</a></li>
-                  {% block follow %} <li class="nav__item"> {% endblock %} <a href="{% url 'follow' %}" class="nav__link link">Мои подписки</a></li>
+<li class="nav__item {% if request.path == index %} nav__item_active {% endif %}">
+<a href="{% url 'index' %}" class="nav__link link">Рецепты</a></li>                  {% block follow %} <li class="nav__item"> {% endblock %} <a href="{% url 'follow' %}" class="nav__link link">Мои подписки</a></li>
                   {% block new_recipe %} <li class="nav__item">{% endblock %}<a href="{% url 'new_recipe' %}" class="nav__link link">Создать рецепт</a></li>
                   {% block favorite %}<li class="nav__item">{% endblock %}<a href="{% url 'favorite' %}" class="nav__link link">Избранное</a></li>
                   {% block shopping_list %}<li class="nav__item">{% endblock %}<a href="{% url 'shopping-list' %}" class="nav__link link">Список покупок</a> <span class="badge badge_style_blue nav__badge" id="counter">{{count}}</span></li>

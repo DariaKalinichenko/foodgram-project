@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7ae859-0330-4359-a38a-4d34fc8df32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodgram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodgram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodgram/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0002_auto_20201015_1325.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0003_auto_20201018_1729.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0004_auto_20201021_1651.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0005_auto_20201021_1705.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/migrations/0006_auto_20201026_1721.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/templatetags/templates_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/templatetags/templates_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +98,7 @@
       <workItem from="1602662577025" duration="21000" />
       <workItem from="1602662641344" duration="62000" />
       <workItem from="1602662741235" duration="58787000" />
-      <workItem from="1603446174761" duration="48910000" />
+      <workItem from="1603446174761" duration="49075000" />
     </task>
     <servers />
   </component>

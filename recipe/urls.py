@@ -19,5 +19,3 @@ urlpatterns = [
     path("<username>/<int:recipe_id>/edit/", views.recipe_edit,
          name="recipe_edit"),
 ]
-
-

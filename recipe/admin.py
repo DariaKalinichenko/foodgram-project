@@ -55,5 +55,3 @@ admin.site.register(FollowUser, FollowAdmin)
 admin.site.register(FollowRecipe, FavoritesAdmin)
 
 admin.site.register(ShoppingList, ShopListAdmin)
-
-

@@ -15,11 +15,9 @@ class Favorites(LoginRequiredMixin, View):
     """
     def post(self, request):
         req_ = json.loads(request.body)
-        print(req_)
         recipe_id = req_.get("id", None)
-        if recipe_id is not None:
+        if recipe_id:
             recipe = get_object_or_404(Recipe, id=recipe_id)
-            print(recipe)
             obj, created = FollowRecipe.objects.get_or_create(
                 user=request.user, recipe=recipe
             )
@@ -32,7 +30,6 @@ class Favorites(LoginRequiredMixin, View):
         recipe = get_object_or_404(
             FollowRecipe, recipe=recipe_id, user=request.user
         )
-        print(recipe)
         recipe.delete()
         return JsonResponse({"success": True})
 
@@ -42,7 +39,6 @@ class Purchases(LoginRequiredMixin, View):
     def post(self, request):
         recipe_id = json.loads(request.body)['id']
         recipe = get_object_or_404(Recipe, id=recipe_id)
-
         ShoppingList.objects.get_or_create(
             user=request.user, recipe=recipe)
         return JsonResponse({'success': True})
@@ -58,15 +54,12 @@ class Purchases(LoginRequiredMixin, View):
 class Subscribe(LoginRequiredMixin, View):
     def post(self, request):
         req_ = json.loads(request.body)
-        print(req_)
         author_id = req_.get("id", None)
         if author_id is not None:
             author = get_object_or_404(User, id=author_id)
-            print(author)
             obj, created = FollowUser.objects.get_or_create(
                 user=request.user, author=author
             )
-            print(request.user)
             if created:
                 return JsonResponse({"success": True})
             return JsonResponse({"success": False})
@@ -100,9 +93,6 @@ class Purchase(LoginRequiredMixin, View):
 class Ingredient(LoginRequiredMixin, View):
     def get(self, request):
         text = request.GET['query']
-        print(text)
-
         ingredients = list(Ingredients.objects.filter(
             title__icontains=text).values('title', 'dimension'))
-        print(ingredients)
         return JsonResponse(ingredients, safe=False)

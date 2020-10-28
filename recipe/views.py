@@ -31,7 +31,6 @@ def new_recipe(request):
     user = User.objects.get(username=request.user)
     if request.method == 'POST':
         form = RecipeForm(request.POST or None, files=request.FILES or None)
-        print(form.errors)
         ingredients = get_ingredients(request)
         if not ingredients:
             form.add_error(None, 'Добавьте ингредиенты')
@@ -65,20 +64,16 @@ def recipe_edit(request, recipe_id):
                           files=request.FILES or None, instance=recipe)
         ingredients = get_ingredients(request)
         if form.is_valid():
-            # удаляем все записи об ингредиентах из базы
             RecipeIngredient.objects.filter(recipe=recipe).delete()
-
             recipe = form.save(commit=False)
             recipe.author = request.user
             recipe.save()
-
-            # Заполняем новыми ингредиентами
             for item in ingredients:
                 RecipeIngredient.objects.create(
                     units=ingredients[item],
                     ingredient=Ingredients.objects.get(name=f'{item}'),
                     recipe=recipe)
-            form.save_m2m()  # это нужно для нормального заполнения тегами
+            form.save_m2m()
             return redirect('index')
 
     form = RecipeForm(request.POST or None,

@@ -2,10 +2,12 @@ FROM python:3.8.5
 
 WORKDIR /code
 
-COPY requirements.txt /code
-COPY ingredients.json /code
+COPY requirements.txt .
+COPY ingredients.json .
 
-RUN pip install -r /code/requirements.txt
+RUN pip install pip --upgrade && pip install -r requirements.txt
+
+RUN pip install -r requirements.txt
 
 COPY . /code
 

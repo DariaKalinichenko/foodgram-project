@@ -1,8 +1,3 @@
-from django.contrib.auth import get_user_model
-
-User = get_user_model()
-
-
 def get_ingredients(request):
     ingredients = {}
     for key, ingredient_name in request.POST.items():

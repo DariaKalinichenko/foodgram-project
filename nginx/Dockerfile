@@ -1,13 +1,6 @@
-FROM nginx:latest
-
-RUN mkdir -p /static
+FROM nginx:19.03.12
 
 RUN rm /etc/nginx/conf.d/default.conf
 
-COPY nginx.conf /etc/nginx/conf.d
+COPY nginx.conf /etc/nginx/conf.d/nginx.conf
 
-WORKDIR /static
-RUN chown -R nginx:nginx /static
-
-WORKDIR /media
-RUN chown -R nginx:nginx /media

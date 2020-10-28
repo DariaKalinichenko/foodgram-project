@@ -156,7 +156,7 @@ def shopping_list(request):
     shopping_list = ShoppingList.objects.filter(user=request.user).all()
     return render(
         request,
-        'shopping-list.html',
+        'shopping_list.html',
         {'shopping_list': shopping_list}
     )
 

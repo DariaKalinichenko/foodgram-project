@@ -19,7 +19,7 @@ services:
     volumes:
       - static:/code/static
       - media:/code/static/media
-    command: bash -c "python manage.py migrate && gunicorn foodgram.wsgi:application --bind 0.0.0.0:5000"
+    command: bash -c "cd ./foodgram/ && python manage.py migrate && echo Migrate succsessful! && gunicorn foodgram.wsgi:application --bind 0.0.0.0:5000"
   nginx:
     build: ./nginx
     depends_on:

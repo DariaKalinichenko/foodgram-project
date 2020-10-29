@@ -3,4 +3,4 @@
 ## Сайт "Продуктовый помощник FoodGram"
 
 
-[http://178.154.234.191/](http://178.154.234.191/ "Продуктовый помощник")
+[http://foodgram-praktikum.cf/](http://foodgram-praktikum.cf/ "Продуктовый помощник")

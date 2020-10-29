@@ -15,15 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import handler404, handler500
+from django.contrib.flatpages import views
 
 from django.urls import path, include
 
 urlpatterns = [
-    path("auth/", include("users.urls")),
-
-    path("auth/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),
+    path("about/", include("django.contrib.flatpages.urls")),
+    path("auth/", include("users.urls")),
+    path("auth/", include("django.contrib.auth.urls")),
     path("api/", include('api.urls')),
+    path('about-author/', views.flatpage, {'url': '/about-author/'}, name='about-author'),
+    path('about-spec/', views.flatpage, {'url': '/about-spec/'}, name='about-spec'),
     path("", include("recipe.urls")),
 
 ]

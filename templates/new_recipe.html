@@ -63,6 +63,7 @@
                 </div>
                 <div class="form__field-group-ingredientes-container"></div>
 
+<<<<<<< HEAD
                 <span class="form__ingredient-link" id="addIng">Добавить ингредиент</span>
                 <span class="form__error">
                      {% if form.non_field_errors %}
@@ -73,6 +74,18 @@
                       </div>
                      {% endif %}
                     </span>
+=======
+<span class="form__ingredient-link" id="addIng">Добавить ингредиент</span>
+<span class="form__error">
+    {% if form.non_field_errors %}
+        <div class="non-field-errors">
+            {% for error in form.non_field_errors %}
+                <p class="form-error">{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+</span>
+>>>>>>> afbc63f68e5fff56aa52eb2bf7334349195cab5a
             </div>
         </div>
         <div class="form__group">

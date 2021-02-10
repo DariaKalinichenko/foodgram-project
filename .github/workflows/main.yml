@@ -42,7 +42,7 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: 130.193.46.125
+        host: 84.252.128.80
         username: admin
         key: ${{ secrets.SSH_KEY }}
         port: 22
